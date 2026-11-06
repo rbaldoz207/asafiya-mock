@@ -40,7 +40,7 @@ a{color:#3e4f2f}a:hover{color:#2a3520}
 .btn-od:hover{background:#2a3520;color:#e5dcca}
 .nav a:hover{color:#e5dcca}
 .lk:hover{opacity:.75}
-.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(42,53,32,0) 35%,rgba(42,53,32,.82) 100%)}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(24,30,18,.80) 0%,rgba(24,30,18,.32) 28%,rgba(24,30,18,.74) 62%,rgba(24,30,18,.94) 100%)}
 .dt{font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#c4ab83}
 input{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 </style>
@@ -92,9 +92,9 @@ input{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 <main>
 <!-- ================= HERO + FILTER BAR ================= -->
 <section aria-labelledby="dev-title" style="position: relative; min-height: 720px; background: linear-gradient(170deg, #4a5c39 0%, #3e4f2f 45%, #2a3520 100%); color: #e5dcca; display: flex; flex-direction: column; justify-content: flex-end">
-<img src="assets/background-dark-1600x1000.svg" alt="" aria-hidden="true" width="1600" height="1000" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .9">
+<img src="assets/home/home-panel-residences-bole.jpg" alt="Render of Residences Bole above the city" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
 <div class="shade" aria-hidden="true"></div>
-<span class="tagl" style="top: 120px; left: auto; right: 48px">Render · Skyline</span>
+<span class="tagl" style="top: 120px; left: auto; right: 48px">Render · Exterior</span>
 <div class="wrap" style="position: relative; z-index: 1; width: 100%; display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 48px; align-items: end; padding-top: 160px; padding-bottom: 72px">
 <div>
 <p class="ey">Developments</p>
@@ -122,7 +122,7 @@ input{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 <a href="construction-progress.html" class="lk" style="color: #2a3520; padding-bottom: 6px; gap: 10px; border-bottom-color: #c4ab83; white-space: nowrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-6M22 20H2"></path></svg>Construction progress</a>
 </div>
 </div>
-<a href="residences-bole.html" style="display: block; aspect-ratio: 16 / 10; position: relative"><img src="assets/render-exterior-light-1200x750.svg" alt="Residences Bole" width="1200" height="750" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span class="tag">Render · Exterior</span></a>
+<a href="residences-bole.html" aria-label="Residences Bole" style="display: block; position: relative; aspect-ratio: 16 / 10"><img src="assets/residences/bole-hero-exterior.jpg" alt="Render of Residences Bole" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span class="tag">Render · Exterior</span></a>
 </article>
 <article class="wrap" style="display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 80px; align-items: center; padding-top: 120px; padding-bottom: 120px; ">
 <div>
@@ -139,7 +139,7 @@ input{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 <a href="construction-progress.html" class="lk" style="color: #2a3520; padding-bottom: 6px; gap: 10px; border-bottom-color: #c4ab83; white-space: nowrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-6M22 20H2"></path></svg>Construction progress</a>
 </div>
 </div>
-<a href="business-centre.html" style="display: block; aspect-ratio: 16 / 10; order: -1; position: relative"><img src="assets/render-exterior-light-1200x750.svg" alt="Business Centre" width="1200" height="750" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span class="tag">Render · Exterior</span></a>
+<a href="business-centre.html" aria-label="Business Centre" style="display: block; position: relative; aspect-ratio: 16 / 10; order: -1"><img src="assets/commercial/bc-hero-exterior.jpg" alt="Render of the Business Centre" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span class="tag">Render · Exterior</span></a>
 </article>
 <div class="wrap" style="border-top: 1px solid #c4ab83; padding-top: 40px; padding-bottom: 96px; display: flex; justify-content: space-between; align-items: center; gap: 24px">
 <p style="margin: 0; font-size: 14px; color: #4a5440">Future developments appear here with the same page structure.</p>
@@ -193,8 +193,9 @@ input{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 </section>
 
 <!-- ================= CTA ================= -->
-<section style="position: relative; background: linear-gradient(180deg, #3e4f2f 0%, #2a3520 100%); color: #e5dcca; padding: 140px 0">
-<img src="assets/background-dark-1600x1000.svg" alt="" aria-hidden="true" width="1600" height="1000" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .9">
+<section style="position: relative; background: #2a3520; color: #e5dcca; padding: 140px 0; overflow: hidden">
+<img src="assets/asafiya-texture-green.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(24,30,18,.62) 0%, rgba(24,30,18,.52) 50%, rgba(24,30,18,.58) 100%)"></div>
 <div class="wrap" style="position: relative; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
 <div>
 <p class="ey" style="color: #c4ab83">Register interest</p>
