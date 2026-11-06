@@ -15,7 +15,7 @@ a{color:#3e4f2f}a:hover{color:#2a3520}
 .phd{background-color:#35442a;background-image:repeating-linear-gradient(135deg,rgba(229,220,202,.08) 0 1px,transparent 1px 16px);position:relative}
 .tag{position:absolute;top:16px;left:16px;background:#2a3520;color:#e5dcca;font:600 10px/1 'Mulish',sans-serif;letter-spacing:.16em;text-transform:uppercase;padding:7px 10px;z-index:1}
 .tagl{position:absolute;top:16px;left:16px;background:#ffffff;color:#2a3520;font:600 10px/1 'Mulish',sans-serif;letter-spacing:.16em;text-transform:uppercase;padding:7px 10px;z-index:1}
-.nav a{color:#e5dcca;text-decoration:none;padding-bottom:4px;border-bottom:1px solid transparent}
+.nav a{color:#e5dcca;text-decoration:none;padding-bottom:4px;border-bottom:1px solid transparent;white-space:nowrap}
 .nav a:hover{border-bottom-color:#c4ab83}
 .dd{position:relative}
 .dd-m{display:none;position:absolute;top:100%;left:-32px;width:640px;box-sizing:border-box;padding:32px;background:#2a3520;border:1px solid rgba(229,220,202,.2);box-shadow:0 20px 40px rgba(0,0,0,.25);z-index:5;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px;text-transform:none;letter-spacing:0}
@@ -41,7 +41,7 @@ a{color:#3e4f2f}a:hover{color:#2a3520}
 .nav a:hover{color:#e5dcca}
 .lk:hover{opacity:.75}
 .vt{writing-mode:vertical-rl;transform:rotate(180deg);font-size:11px;font-weight:600;letter-spacing:.32em;text-transform:uppercase}
-.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(42,53,32,0) 35%,rgba(42,53,32,.82) 100%)}
+.shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(24,30,18,.40) 0%,rgba(24,30,18,.32) 28%,rgba(24,30,18,.74) 62%,rgba(24,30,18,.94) 100%)}
 input,select{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 .fi{height:52px;border:0;border-bottom:1px solid rgba(229,220,202,.5);background:transparent;padding:0;color:#e5dcca;width:100%;box-sizing:border-box}
 .fi option{color:#2a3520}
@@ -54,7 +54,8 @@ input,select{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 <header style="position: absolute; top: 0; left: 0; right: 0; z-index: 2; color: #e5dcca">
 <div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 96px">
 <a href="#" aria-label="Asafiya Properties home" style="display: block"><img src="assets/asafiya-logo-light.png" alt="Asafiya Properties" width="165" height="40" style="display: block; height: 40px; width: auto"></a>
-<nav class="nav" aria-label="Main" style="display: flex; gap: 40px; font-size: 12px; font-weight: 400; letter-spacing: .14em; text-transform: uppercase">
+<nav class="nav" aria-label="Main" style="display: flex; gap: 32px; white-space: nowrap; font-size: 12px; font-weight: 400; letter-spacing: .14em; text-transform: uppercase">
+<a href="index.html" aria-current="page" style="border-bottom-color: #c4ab83">Home</a>
 <a href="about.html">About</a>
 <div class="dd">
 <a href="developments.html" aria-haspopup="true">Developments</a>
@@ -93,9 +94,9 @@ input,select{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 <main>
 <!-- ================= HERO ================= -->
 <section aria-labelledby="hero-title" style="position: relative; min-height: 880px; background: linear-gradient(170deg, #4a5c39 0%, #3e4f2f 45%, #2a3520 100%); color: #e5dcca; display: flex; flex-direction: column">
-<img src="assets/background-dark-1600x1000.svg" alt="" aria-hidden="true" width="1600" height="1000" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .9">
+<img src="assets/home/home-hero-residences-bole.jpg" alt="Render of Residences Bole from the avenue, terraces planted, dusk sky" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
 <div class="shade" aria-hidden="true"></div>
-<span class="tagl" style="top: auto; bottom: 32px; left: auto; right: 48px">Render · Hero image</span>
+<span class="tagl" style="top: auto; bottom: 32px; left: auto; right: 48px">Render</span>
 
 
 
@@ -153,7 +154,7 @@ input,select{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 
 
 <article data-k="res" style="position: relative; min-height: 760px; display: flex; align-items: flex-end; background: #4a5c39">
-<img src="assets/background-dark-1600x1000.svg" alt="" aria-hidden="true" width="1600" height="1000" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .9">
+<img src="assets/home/home-panel-residences-bole.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
 <div class="shade" aria-hidden="true"></div>
 <span class="tagl" style="top: 32px; left: 48px">Render · Exterior</span>
 <div class="wrap" style="position: relative; width: 100%; display: grid; grid-template-columns: minmax(0, 1fr) 420px; gap: 48px; align-items: end; padding-bottom: 64px">
@@ -178,7 +179,7 @@ input,select{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 
 
 <article data-k="com" style="position: relative; min-height: 760px; display: flex; align-items: flex-end; background: #35442a; border-top: 1px solid rgba(229,220,202,.2)">
-<img src="assets/background-dark-1600x1000.svg" alt="" aria-hidden="true" width="1600" height="1000" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .9">
+<img src="assets/home/home-panel-business-centre.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
 <div class="shade" aria-hidden="true"></div>
 <span class="tagl" style="top: 32px; left: 48px">Render · Exterior</span>
 <div class="wrap" style="position: relative; width: 100%; display: grid; grid-template-columns: 420px minmax(0, 1fr); gap: 48px; align-items: end; padding-bottom: 64px">
@@ -234,7 +235,7 @@ input,select{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 <!-- update feed: one repeating template, image 4:3 at a fixed width -->
 <p style="margin: 0 0 8px; font-size: 11px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #4a5440">Latest updates</p>
 <article style="display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 40px; align-items: start; padding: 32px 0; border-top: 1px solid #c4ab83">
-<div style="aspect-ratio: 4 / 3; position: relative"><img src="assets/site-photo-light-1200x900.svg" alt="Site photo placeholder" width="1200" height="900" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span class="tag">Site photo</span></div>
+<div style="position: relative; aspect-ratio: 4 / 3"><img src="assets/home/home-progress-facade.jpg" alt="Render of the facade installation on Residences Bole" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span class="tag">Render · Facade</span></div>
 <div>
 <p style="margin: 0; font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #3e4f2f">22 Oct 2026 · Residences Bole · Facade</p>
 <h3 class="serif" style="font-size: 28px; margin-top: 14px; line-height: 1.2">Facade installation begins on the north elevation</h3>
@@ -243,7 +244,7 @@ input,select{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 </div>
 </article>
 <article style="display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 40px; align-items: start; padding: 32px 0; border-top: 1px solid #c4ab83">
-<div style="aspect-ratio: 4 / 3; position: relative"><img src="assets/site-video-light-1200x900.svg" alt="Site video placeholder" width="1200" height="900" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span class="tag">Site video</span></div>
+<div style="position: relative; aspect-ratio: 4 / 3"><img src="assets/home/home-progress-structure.jpg" alt="Render of the completed structural frame" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span class="tag">Render · Structure</span></div>
 <div>
 <p style="margin: 0; font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #3e4f2f">15 Oct 2026 · Business Centre · Foundation</p>
 <h3 class="serif" style="font-size: 28px; margin-top: 14px; line-height: 1.2">Foundation piling reaches 60 percent</h3>
@@ -252,7 +253,7 @@ input,select{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 </div>
 </article>
 <article style="display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 40px; align-items: start; padding: 32px 0; border-top: 1px solid #c4ab83; border-bottom: 1px solid #c4ab83">
-<div style="aspect-ratio: 4 / 3; position: relative"><img src="assets/site-photo-light-1200x900.svg" alt="Site photo placeholder" width="1200" height="900" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span class="tag">Site photo</span></div>
+<div style="position: relative; aspect-ratio: 4 / 3"><img src="assets/home/home-progress-interior-works.jpg" alt="Render of interior works on a typical floor" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span class="tag">Render · Interior works</span></div>
 <div>
 <p style="margin: 0; font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #3e4f2f">24 Sep 2026 · Residences Bole · Structure</p>
 <h3 class="serif" style="font-size: 28px; margin-top: 14px; line-height: 1.2">Structural frame complete at level 14</h3>
@@ -268,8 +269,8 @@ input,select{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 <section style="background: #f4efe4; padding: 140px 0 200px">
 <div class="wrap" style="display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 0; align-items: center">
 <div style="position: relative; padding-right: 96px">
-<div style="aspect-ratio: 4 / 5; position: relative"><img src="assets/render-interior-light-1200x1500.svg" alt="Render · Interior" width="1200" height="1500" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span class="tag">Render · Interior</span></div>
-<div style="position: absolute; right: 0; bottom: -64px; width: 46%; aspect-ratio: 4 / 3;  box-shadow: 0 30px 60px rgba(42,53,32,.18)"><img src="assets/site-photo-plant-room-4a5c39-1200x900.svg" alt="Site photo · Plant room" width="1200" height="900" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span class="tagl">Site photo · Plant room</span></div>
+<div style="position: relative; aspect-ratio: 4 / 5"><img src="assets/home/home-standards-living-room.jpg" alt="Render of a two-bedroom living room opening onto the terrace" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span class="tag">Render · Interior</span></div>
+<div style="position: absolute; right: 0; bottom: -64px; width: 46%; aspect-ratio: 4 / 3; box-shadow: 0 30px 60px rgba(42,53,32,.18)"><img src="assets/home/home-standards-plant-room.jpg" alt="Render of the basement plant room with generators and water storage" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span class="tagl">Render · Plant room</span></div>
 </div>
 <div style="padding-left: 24px">
 <p class="ey" style="color: #3e4f2f">Development standards</p>
@@ -287,8 +288,8 @@ input,select{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 
 <!-- ================= INTERNATIONAL & DIASPORA (full-bleed) ================= -->
 <section style="position: relative; background: #3e4f2f; color: #e5dcca; padding: 160px 0 140px; overflow: hidden">
-<img src="assets/background-dark-1600x1000.svg" alt="" aria-hidden="true" width="1600" height="1000" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .9">
-<div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(42,53,32,.92) 0%, rgba(42,53,32,.55) 60%, rgba(42,53,32,.25) 100%)" aria-hidden="true"></div>
+<img src="assets/home/home-band-terrace-dusk.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(24,30,18,.96) 0%, rgba(24,30,18,.90) 45%, rgba(24,30,18,.62) 75%, rgba(24,30,18,.40) 100%)" aria-hidden="true"></div>
 <span class="tagl" style="top: 32px; left: auto; right: 48px">Render · Terrace at dusk</span>
 <div class="wrap" style="position: relative">
 <p class="ey" style="color: #c4ab83">International and diaspora buyers</p>
@@ -332,22 +333,22 @@ input,select{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 </div>
 <div style="display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 64px; margin-top: 64px; align-items: start">
 <article>
-<div style="aspect-ratio: 16 / 10; position: relative"><img src="assets/photo-light-1200x750.svg" alt="Photo" width="1200" height="750" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span class="tag">Photo</span></div>
+<div style="position: relative; aspect-ratio: 16 / 10"><img src="assets/home/home-news-groundbreaking.jpg" alt="Groundbreaking ceremony for the Business Centre" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"><span class="tag">Photo</span></div>
 <p style="margin: 24px 0 10px; font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #3e4f2f">Press release · 05 Jun 2026</p>
 <h3 class="serif" style="font-size: 36px; line-height: 1.15">Business Centre breaks ground in Kazanchis</h3>
 <p style="margin: 14px 0 0; font-size: 16px; line-height: 1.7; color: #3a4530; max-width: 600px">Work has started on a twelve-floor office and retail building, with dated progress published every month from day one.</p>
 </article>
 <div style="display: flex; flex-direction: column">
 <article style="display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 24px; padding-bottom: 32px; border-bottom: 1px solid #c4ab83">
-<div style="aspect-ratio: 1 / 1; position: relative"><img src="assets/photo-light-1200x1200.svg" alt="Photo placeholder" width="1200" height="1200" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></div>
+<img src="assets/home/home-progress-structure.jpg" alt="Structural frame render" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover">
 <div><p style="margin: 0 0 8px; font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #3e4f2f">News · 26 Sep 2026</p><h3 class="serif" style="font-size: 22px; line-height: 1.25">Structural frame complete at Residences Bole</h3></div>
 </article>
 <article style="display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 24px; padding: 32px 0; border-bottom: 1px solid #c4ab83">
-<div style="aspect-ratio: 1 / 1; position: relative"><img src="assets/photo-light-1200x1200.svg" alt="Photo placeholder" width="1200" height="1200" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></div>
+<img src="assets/home/home-band-terrace-dusk.jpg" alt="Terrace at dusk render" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover">
 <div><p style="margin: 0 0 8px; font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #3e4f2f">News · 14 Aug 2026</p><h3 class="serif" style="font-size: 22px; line-height: 1.25">Buying property in Ethiopia from abroad: what to expect</h3></div>
 </article>
 <article style="display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 24px; padding: 32px 0 0">
-<div style="aspect-ratio: 1 / 1; position: relative"><img src="assets/photo-light-1200x1200.svg" alt="Photo placeholder" width="1200" height="1200" style="display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></div>
+<img src="assets/home/home-progress-facade.jpg" alt="Facade render" style="display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover">
 <div><p style="margin: 0 0 8px; font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #3e4f2f">Newsletter · October 2026</p><h3 class="serif" style="font-size: 22px; line-height: 1.25">October 2026 progress update</h3></div>
 </article>
 </div>
@@ -356,8 +357,9 @@ input,select{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 </section>
 
 <!-- ================= REGISTER INTEREST ================= -->
-<section id="register" style="position: relative; background: linear-gradient(180deg, #3e4f2f 0%, #2a3520 100%); color: #e5dcca; padding: 160px 0 140px">
-<img src="assets/background-dark-1600x1000.svg" alt="" aria-hidden="true" width="1600" height="1000" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .9">
+<section id="register" style="position: relative; background: #2a3520; color: #e5dcca; padding: 160px 0 140px; overflow: hidden">
+<img src="assets/asafiya-texture-green.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(24,30,18,.62) 0%, rgba(24,30,18,.52) 50%, rgba(24,30,18,.58) 100%)"></div>
 <div class="wrap" style="position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 96px; align-items: start">
 <div>
 <p class="ey" style="color: #c4ab83">Register interest</p>
@@ -368,10 +370,9 @@ input,select{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 <form style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 24px">
 <div style="display: flex; flex-direction: column; gap: 10px"><label for="h-name" style="font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #c4ab83">Full name</label><input id="h-name" class="fi" type="text" autocomplete="name"></div>
 <div style="display: flex; flex-direction: column; gap: 10px"><label for="h-email" style="font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #c4ab83">Email</label><input id="h-email" class="fi" type="email" autocomplete="email"></div>
-<div style="display: flex; flex-direction: column; gap: 10px"><label for="h-phone" style="font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #c4ab83">Phone with country code</label><input id="h-phone" class="fi" type="tel" autocomplete="tel"></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><label for="h-phone" style="font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #c4ab83">Phone number</label><input id="h-phone" class="fi" type="tel" autocomplete="tel"></div>
 <div style="display: flex; flex-direction: column; gap: 10px"><label for="h-country" style="font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #c4ab83">Country of residence</label><input id="h-country" class="fi" type="text" autocomplete="country-name"></div>
-<div style="display: flex; flex-direction: column; gap: 10px"><label for="h-dev" style="font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #c4ab83">Development</label><select id="h-dev" class="fi"><option>Residences Bole</option><option>Business Centre</option><option>Not sure yet</option></select></div>
-<div style="display: flex; flex-direction: column; gap: 10px"><label for="h-type" style="font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #c4ab83">I am buying as</label><select id="h-type" class="fi"><option>Local buyer</option><option>Diaspora buyer</option><option>International investor</option></select></div>
+<div style="display: flex; flex-direction: column; gap: 10px; grid-column: 1 / -1"><label for="h-type" style="font-size: 11px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: #c4ab83">I am buying as</label><select id="h-type" class="fi"><option>Local buyer</option><option>Diaspora buyer</option><option>International investor</option></select></div>
 <label style="grid-column: 1 / -1; display: flex; gap: 12px; align-items: flex-start; font-size: 13px; line-height: 1.6; color: rgba(229,220,202,.85)"><input type="checkbox" style="width: 18px; height: 18px; margin-top: 2px; accent-color: #e5dcca">I agree to be contacted about this enquiry and accept the privacy policy.</label>
 <button type="button" class="btn btn-l" style="grid-column: 1 / -1; justify-self: start; border: 0; cursor: pointer; font-family: 'Mulish', sans-serif">Submit enquiry</button>
 </form>

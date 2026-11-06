@@ -15,7 +15,7 @@ a{color:#3e4f2f}a:hover{color:#2a3520}
 .phd{background-color:#35442a;background-image:repeating-linear-gradient(135deg,rgba(229,220,202,.08) 0 1px,transparent 1px 16px);position:relative}
 .tag{position:absolute;top:16px;left:16px;background:#2a3520;color:#e5dcca;font:600 10px/1 'Mulish',sans-serif;letter-spacing:.16em;text-transform:uppercase;padding:7px 10px;z-index:1}
 .tagl{position:absolute;top:16px;left:16px;background:#ffffff;color:#2a3520;font:600 10px/1 'Mulish',sans-serif;letter-spacing:.16em;text-transform:uppercase;padding:7px 10px;z-index:1}
-.nav a{color:#e5dcca;text-decoration:none;padding-bottom:4px;border-bottom:1px solid transparent}
+.nav a{color:#e5dcca;text-decoration:none;padding-bottom:4px;border-bottom:1px solid transparent;white-space:nowrap}
 .nav a:hover{border-bottom-color:#c4ab83}
 .dd{position:relative}
 .dd-m{display:none;position:absolute;top:100%;left:-32px;width:640px;box-sizing:border-box;padding:32px;background:#2a3520;border:1px solid rgba(229,220,202,.2);box-shadow:0 20px 40px rgba(0,0,0,.25);z-index:5;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 40px;text-transform:none;letter-spacing:0}
@@ -60,7 +60,8 @@ input,select{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 <header style="position: absolute; top: 0; left: 0; right: 0; z-index: 3; color: #e5dcca">
 <div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 96px">
 <a href="index.html" aria-label="Asafiya Properties home" style="display: block"><img src="assets/asafiya-logo-light.png" alt="Asafiya Properties" width="165" height="40" style="display: block; height: 40px; width: auto"></a>
-<nav class="nav" aria-label="Main" style="display: flex; gap: 40px; font-size: 12px; font-weight: 400; letter-spacing: .14em; text-transform: uppercase">
+<nav class="nav" aria-label="Main" style="display: flex; gap: 32px; white-space: nowrap; font-size: 12px; font-weight: 400; letter-spacing: .14em; text-transform: uppercase">
+<a href="index.html">Home</a>
 <a href="about.html">About</a>
 <div class="dd">
 <a href="developments.html" style="border-bottom-color: #c4ab83" aria-haspopup="true">Developments</a>
@@ -370,7 +371,7 @@ input,select{font:300 15px 'Mulish',sans-serif;color:#2a3520}
 <div style="display: flex; flex-direction: column; gap: 10px"><label for="c-name" class="dt" style="color: #c4ab83">Full name</label><input id="c-name" class="fi" type="text" autocomplete="name"></div>
 <div style="display: flex; flex-direction: column; gap: 10px"><label for="c-co" class="dt" style="color: #c4ab83">Company</label><input id="c-co" class="fi" type="text" autocomplete="organization"></div>
 <div style="display: flex; flex-direction: column; gap: 10px"><label for="c-email" class="dt" style="color: #c4ab83">Email</label><input id="c-email" class="fi" type="email" autocomplete="email"></div>
-<div style="display: flex; flex-direction: column; gap: 10px"><label for="c-phone" class="dt" style="color: #c4ab83">Phone with country code</label><input id="c-phone" class="fi" type="tel" autocomplete="tel"></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><label for="c-phone" class="dt" style="color: #c4ab83">Phone number</label><input id="c-phone" class="fi" type="tel" autocomplete="tel"></div>
 <div style="display: flex; flex-direction: column; gap: 10px"><label for="c-size" class="dt" style="color: #c4ab83">Space needed (sqm)</label><input id="c-size" class="fi" type="number" min="0"></div>
 <div style="display: flex; flex-direction: column; gap: 10px"><label for="c-use" class="dt" style="color: #c4ab83">Use</label><select id="c-use" class="fi"><option>Office</option><option>Retail</option><option>Other</option></select></div>
 <div style="grid-column: 1 / -1; display: flex; flex-direction: column; gap: 10px"><label for="c-time" class="dt" style="color: #c4ab83">When do you need the space?</label><select id="c-time" class="fi"><option>Within 6 months</option><option>6 to 12 months</option><option>Over 12 months</option></select></div>
